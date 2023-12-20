@@ -1,0 +1,89 @@
+name: Workflow for Myosotis Config
+on: [ push ]
+
+jobs:
+  
+  # Job 1. Compress and Push
+  compress_and_push:
+
+    runs-on: ubuntu-latest
+    name: Compress and Push
+
+    steps:
+
+      # Step 1. Checkout Repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          ref: main
+
+      # Step 2. Execute Unbuntu Commands
+      - name: Delete old archive.zip and compress folder
+        run: |
+          rm web/archive.zip
+          zip -r web/archive.zip web
+        shell: bash
+
+      # Step 3. Push to GitHub
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          now=$(date +"%Y-%m-%d %H:%M:%S")
+          git commit -m "GitHub Action, ${now}"
+          git push
+
+  # Job 2. List the pages and generate the artifact
+  pages_directory_listing:
+
+    needs: compress_and_push
+
+    runs-on: ubuntu-latest
+    name: Pages Directory Listing
+
+    steps:
+
+      # Step 1. Checkout Repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          # branch to check out
+          ref: main
+
+      # Step 2. Generate the artifact
+      - name: Generate Directory Listings
+        uses: jayanta525/github-pages-directory-listing@v3.0.0
+        with:
+          # directory to generate the artifact
+          FOLDER: .
+
+      # Step 3. Upload the artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: '.'
+
+  # Job 3. Deploy the artifact
+  deploy:
+
+    needs: pages_directory_listing
+    
+    runs-on: ubuntu-latest
+    name: Deploy
+    
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+
+      # Step 1. Deploy the artifact to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
