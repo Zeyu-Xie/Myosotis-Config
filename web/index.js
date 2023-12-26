@@ -65,3 +65,29 @@ const init_author = () => {
 
 init_date()
 init_author()
+
+// select-view
+const init_select_view = () => {
+
+    const _select_views = document.getElementsByClassName("select-view")
+
+    Array.from(_select_views).forEach(item => {
+
+        const _select_view_select = item.getElementsByClassName("select-view-select")[0]
+        const _select_view_views = item.getElementsByClassName("select-view-view")
+
+        const _select_view_views_selected = item.getElementsByClassName(`select-view-view option-${_select_view_select.value}`)
+        Array.from(_select_view_views).forEach(_item => _item.style.display = "none")
+        Array.from(_select_view_views_selected).forEach(_item => _item.style.display = "block")
+
+        _select_view_select.onchange = () => {
+
+            const _select_view_views_selected = item.getElementsByClassName(`select-view-view option-${_select_view_select.value}`)
+            Array.from(_select_view_views).forEach(_item => _item.style.display = "none")
+            Array.from(_select_view_views_selected).forEach(_item => _item.style.display = "block")
+        }
+
+    })
+}
+
+init_select_view()

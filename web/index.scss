@@ -328,6 +328,11 @@ td {
   font-size: inherit;
 }
 
+textarea {
+  box-sizing: border-box;
+  resize: none;
+}
+
 th {
   display: table-cell;
 
