@@ -73,18 +73,18 @@ const init_select_view = () => {
 
     Array.from(_select_views).forEach(item => {
 
-        const _select_view_select = item.querySelector(".select-view > .select-view-select")
-        const _select_view_views = item.querySelectorAll(".selet-view > .select-view-view")
+        const _select_view_select = item.querySelector(":scope > .select-view-select")
+        const _select_view_views = item.querySelectorAll(":scope > .select-view-view")
 
-        const _select_view_views_selected = item.querySelectorAll(`.select-view > .select-view-view.option-${_select_view_select.value}`)
+        const _select_view_views_selected = item.querySelectorAll(`:scope > .select-view-view.option-${_select_view_select.value}`)
         Array.from(_select_view_views).forEach(_item => _item.style.display = "none")
         Array.from(_select_view_views_selected).forEach(_item => _item.style.display = "block")
 
         _select_view_select.onchange = () => {
 
-            const _select_view_views_selected = item.querySelectorAll(`.select-view > .select-view-view.option-${_select_view_select.value}`)
-        Array.from(_select_view_views).forEach(_item => _item.style.display = "none")
-        Array.from(_select_view_views_selected).forEach(_item => _item.style.display = "block")
+            const _select_view_views_selected = item.querySelectorAll(`:scope > .select-view-view.option-${_select_view_select.value}`)
+            Array.from(_select_view_views).forEach(_item => _item.style.display = "none")
+            Array.from(_select_view_views_selected).forEach(_item => _item.style.display = "block")
         }
 
     })
