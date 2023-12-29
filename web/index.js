@@ -1,5 +1,7 @@
 const author = "Acan"
 
+// Auto Filling
+
 // year, month, monthName, date, day, dayName, hour, minute, second
 const init_date = () => {
     const date_array_1 = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -66,6 +68,8 @@ const init_author = () => {
 init_date()
 init_author()
 
+// Structures
+
 // select-view
 const init_select_view = () => {
 
@@ -90,4 +94,16 @@ const init_select_view = () => {
     })
 }
 
+// refreshing
+
+const init_refreshing = () => {
+    const _refreshing = document.getElementsByClassName("refreshing")
+    Array.from(_refreshing).forEach(item => { 
+        setInterval(() => {
+            item.innerText = eval(item.getAttribute("content"))
+        }, 1000 / parseInt(item.getAttribute("frequency")))
+    })
+}
+
 init_select_view()
+init_refreshing()
