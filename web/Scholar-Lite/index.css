@@ -219,6 +219,10 @@ p {
   font-size: inherit;
 }
 
+span {
+  font-size: inherit;
+}
+
 pre {
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
