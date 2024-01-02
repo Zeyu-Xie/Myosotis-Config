@@ -20,8 +20,8 @@ jobs:
       # Step 2. Execute Unbuntu Commands
       - name: Delete old archive.zip and compress folder
         run: |
-          rm web/archive.zip
-          zip -r web/archive.zip web
+          rm web/Scholar-Lite/archive.zip
+          zip -r web/Scholar-Lite/archive.zip web/Scholar-Lite
         shell: bash
 
       # Step 3. Push to GitHub
