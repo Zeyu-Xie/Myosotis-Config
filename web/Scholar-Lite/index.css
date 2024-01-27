@@ -52,10 +52,10 @@ body {
   width: auto;
   min-width: min-content;
   max-width: 768px;
-  padding-inline: 16px;
+  padding-inline: 1em;
   margin-inline: auto;
   margin-block: 0;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 button {
