@@ -10,9 +10,7 @@ $xxl: 1400px;
     font-size: 14px;
   }
   font-family: "Times New Roman", Times, serif;
-}
-
-@media only screen and (max-width: $md) {
+  -webkit-text-size-adjust: 100%;
 }
 
 a {
