@@ -98,7 +98,7 @@ const init_select_view = () => {
 
 const init_refreshing = () => {
     const _refreshing = document.getElementsByClassName("refreshing")
-    Array.from(_refreshing).forEach(item => { 
+    Array.from(_refreshing).forEach(item => {
         setInterval(() => {
             item.innerText = eval(item.getAttribute("content"))
         }, 1000 / parseInt(item.getAttribute("frequency")))
@@ -107,3 +107,29 @@ const init_refreshing = () => {
 
 init_select_view()
 init_refreshing()
+
+// Functions
+
+// cookies
+
+function setCookie(name, value, daysToExpire) {
+    const expirationDate = new Date();
+    expirationDate.setDate(expirationDate.getDate() + daysToExpire);
+    const cookieString = `${name}=${encodeURIComponent(value)}; expires=${expirationDate.toUTCString()}; path=/`;
+    document.cookie = cookieString;
+}
+
+function getCookie(name) {
+    const cookies = document.cookie.split(';').map(cookie => cookie.trim());
+    for (const cookie of cookies) {
+        const [cookieName, cookieValue] = cookie.split('=');
+        if (cookieName === name) {
+            return decodeURIComponent(cookieValue);
+        }
+    }
+    return null;
+}
+
+function deleteCookie(name) {
+    document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+}
