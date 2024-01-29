@@ -232,6 +232,7 @@ pre {
   white-space: -o-pre-wrap;
   word-wrap: break-word;
   tab-size: 4;
+  overflow: scroll;
 }
 
 rt {
