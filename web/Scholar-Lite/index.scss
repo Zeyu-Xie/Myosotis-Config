@@ -273,16 +273,14 @@ p {
   font-size: inherit;
 }
 
-span {
-  font-size: inherit;
-}
-
 pre {
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
+
+  tab-size: 4;
 }
 
 rt {
@@ -301,6 +299,10 @@ select {
   display: block;
 
   margin-block: 1em;
+}
+
+span {
+  font-size: inherit;
 }
 
 sub,
