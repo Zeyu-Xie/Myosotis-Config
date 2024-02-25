@@ -374,4 +374,14 @@ mediaviewPlaybackIconFgOver: mediaviewPlaybackActiveOver
 mediaviewTransparentBg: #FFFFFF
 mediaviewTransparentFg: #CCCCCC
 notificationBg: #FFFFFF
+sideBarBg: #FFFFFF
+sideBarBgActive: #566877
+sideBarTextFg: #A1B7B9
+sideBarIconFg: #A1B7B9
+sideBarBadgeFg: #FFFFFF
+sideBarTextFgActive: #A1B7B9
+sideBarIconFgActive: #A1B7B9
+sideBarBadgeBg: #A1B7B9
+sideBarBadgeBgMuted: #A1B7B9
+sideBarBgRipple: #A1B7B9
 wallpaper: t.me/bg/RXh5klA7xFMBAAAAEJpD36aNyPc // link to cloud wallpaper
