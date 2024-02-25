@@ -1,0 +1,398 @@
+name: AliveKenny
+shortname: mtmPjxdNfQQAJ03a
+
+ThemeAkzent: #3E9CE5 // color for accent elements, such as checkboxes, buttons, active chat, sent bubbles etc.
+windowBg: #FFFFFF // background window color
+windowFg: #000000 // font color
+windowBgOver: #F3F3F3
+windowBgRipple: #E5E5E5
+windowFgOver: #000000
+windowSubTextFg: #999999
+windowSubTextFgOver: #919191
+windowBoldFg: #222222
+windowBoldFgOver: #222222
+windowBgActive: ThemeAkzent // selected checkboxes, etc
+windowFgActive: #FFFFFF // selected text color for chats
+windowActiveTextFg: #0065A9 // color of links
+windowShadowFg: #000000
+windowShadowFgFallback: #F1F1F1
+shadowFg: #00000018
+slideFadeOutBg: #0000003C
+slideFadeOutShadowFg: windowShadowFg
+imageBg: #000000
+imageBgTransparent: #FFFFFF
+activeButtonBg: windowBgActive
+activeButtonBgOver: #39A5DB
+activeButtonBgRipple: #2095D0
+activeButtonFg: windowFgActive
+activeButtonFgOver: activeButtonFg
+activeButtonSecondaryFg: #CCEEFF
+activeButtonSecondaryFgOver: activeButtonSecondaryFg
+activeLineFg: #37A1DE
+activeLineFgError: #E48383
+lightButtonBg: windowBg
+lightButtonBgOver: #E3F1FA
+lightButtonBgRipple: #C9E4F6
+lightButtonFg: #168ACD // button text color
+lightButtonFgOver: lightButtonFg
+attentionButtonFg: #D14E4E
+attentionButtonFgOver: #D14E4E
+attentionButtonBgOver: #FCDFDE
+attentionButtonBgRipple: #F4C3C2
+outlineButtonBg: windowBg
+outlineButtonBgOver: lightButtonBgOver
+outlineButtonOutlineFg: windowBgActive
+outlineButtonBgRipple: lightButtonBgRipple
+menuBg: windowBg // ?
+menuBgOver: windowBgOver // ?
+menuBgRipple: windowBgRipple
+menuIconFg: #A8A8A8 // icons
+menuIconFgOver: #999999
+menuSubmenuArrowFg: #373737
+menuFgDisabled: #CCCCCC
+menuSeparatorFg: #F1F1F1
+scrollBarBg: #00000053
+scrollBarBgOver: #0000007A
+scrollBg: #0000001A
+scrollBgOver: #0000002C
+smallCloseIconFg: #C7C7C7
+smallCloseIconFgOver: #A3A3A3
+radialFg: windowFgActive // ?
+radialBg: #00000056
+placeholderFg: windowSubTextFg
+placeholderFgActive: #AAAAAA
+inputBorderFg: #E0E0E0
+filterInputBorderFg: #54C3F3
+filterInputInactiveBg: windowBgOver
+checkboxFg: #B3B3B3
+sliderBgInactive: #E1EAEF
+sliderBgActive: windowBgActive
+tooltipBg: #EEF2F5
+tooltipFg: #5D6C80
+tooltipBorderFg: #C9D1DB
+titleShadow: #00000003
+titleBg: #dialogsBg // very tip top of window
+titleBgActive: titleBg
+titleButtonBg: titleBg // ?
+titleButtonFg: #ABABAB
+titleButtonBgOver: #E5E5E5
+titleButtonFgOver: #9A9A9A
+titleButtonBgActive: titleButtonBg
+titleButtonFgActive: titleButtonFg
+titleButtonBgActiveOver: titleButtonBgOver
+titleButtonFgActiveOver: titleButtonFgOver
+titleButtonCloseBg: titleButtonBg
+titleButtonCloseFg: titleButtonFg
+titleButtonCloseBgOver: #E81123
+titleButtonCloseFgOver: windowFgActive
+titleButtonCloseBgActive: titleButtonCloseBg
+titleButtonCloseFgActive: titleButtonCloseFg
+titleButtonCloseBgActiveOver: titleButtonCloseBgOver
+titleButtonCloseFgActiveOver: titleButtonCloseFgOver
+titleFg: #ACACAC
+titleFgActive: #3E3C3E
+trayCounterBg: #FF0000 // ?
+trayCounterBgMute: #888888
+trayCounterFg: #FFFFFF
+trayCounterBgMacInvert: #FFFFFF
+trayCounterFgMacInvert: #FFFFFF01
+layerBg: #0000007F
+cancelIconFg: menuIconFg
+cancelIconFgOver: menuIconFgOver
+boxBg: #FFFFFF // settings window
+boxTextFg: #000000 // dialog text
+boxTextFgGood: #4AB44A
+boxTextFgError: #D84D4D
+boxTitleFg: #404040
+boxSearchBg: windowBgOver // красный пиздец
+boxSearchCancelIconFg: cancelIconFg
+boxSearchCancelIconFgOver: cancelIconFgOver
+boxTitleAdditionalFg: #808080
+boxTitleCloseFg: cancelIconFg
+boxTitleCloseFgOver: cancelIconFgOver
+membersAboutLimitFg: windowSubTextFgOver
+contactsBg: windowBg // ?
+contactsBgOver: windowBgOver
+contactsNameFg: boxTextFg
+contactsStatusFg: windowSubTextFg
+contactsStatusFgOver: windowSubTextFgOver
+contactsStatusFgOnline: #168ACD
+photoCropFadeBg: layerBg
+photoCropPointFg: #FFFFFF7F
+introBg: windowBg
+introTitleFg: windowBoldFg
+introDescriptionFg: windowSubTextFg
+introErrorFg: windowSubTextFg
+introCoverTopBg: #0F89D0
+introCoverBottomBg: #39B0F0
+introCoverIconsFg: #5EC6FF
+introCoverPlaneTrace: #5EC6FF69
+introCoverPlaneInner: #C6D8E8
+introCoverPlaneOuter: #A1BED4
+introCoverPlaneTop: #FFFFFF
+dialogsMenuIconFg: menuIconFg
+dialogsMenuIconFgOver: menuIconFgOver
+dialogsBg: #FFFFFF // main pane of chats (list) 
+dialogsNameFg: windowBoldFg
+dialogsChatIconFg: dialogsNameFg
+dialogsDateFg: windowSubTextFg
+dialogsTextFg: windowSubTextFg
+dialogsTextFgService: #168ACD
+dialogsDraftFg: #DD4B39
+dialogsVerifiedIconBg: windowBgActive
+dialogsVerifiedIconFg: windowFgActive
+dialogsSendingIconFg: #C1C1C1
+dialogsSentIconFg: #42B1F8 // sent check marks in history pane (list) f0f0f2
+dialogsUnreadBg: windowBgActive
+dialogsUnreadBgMuted: #BBBBBB
+dialogsUnreadFg: windowFgActive
+dialogsBgOver: windowBgOver
+dialogsNameFgOver: windowBoldFgOver
+dialogsChatIconFgOver: dialogsNameFgOver
+dialogsDateFgOver: windowSubTextFgOver
+dialogsTextFgOver: windowSubTextFgOver
+dialogsTextFgServiceOver: dialogsTextFgService
+dialogsDraftFgOver: dialogsDraftFg
+dialogsVerifiedIconBgOver: dialogsVerifiedIconBg
+dialogsVerifiedIconFgOver: dialogsVerifiedIconFg
+dialogsSendingIconFgOver: dialogsSendingIconFg
+dialogsSentIconFgOver: dialogsSentIconFg
+dialogsUnreadBgOver: dialogsUnreadBg
+dialogsUnreadBgMutedOver: dialogsUnreadBgMuted
+dialogsUnreadFgOver: dialogsUnreadFg
+dialogsBgActive: ThemeAkzent //Active chat
+dialogsNameFgActive: windowFgActive
+dialogsChatIconFgActive: dialogsNameFgActive
+dialogsDateFgActive: windowFgActive
+dialogsTextFgActive: windowFgActive
+dialogsTextFgServiceActive: dialogsTextFgActive
+dialogsDraftFgActive: #C6E1F7
+dialogsVerifiedIconBgActive: dialogsTextFgActive
+dialogsVerifiedIconFgActive: ThemeAkzent
+dialogsSendingIconFgActive: #FFFFFF99
+dialogsSentIconFgActive: dialogsTextFgActive
+dialogsUnreadBgActive: dialogsTextFgActive
+dialogsUnreadBgMutedActive: dialogsDraftFgActive
+dialogsUnreadFgActive: ThemeAkzent
+dialogsForwardBg: ThemeAkzent
+dialogsForwardFg: dialogsNameFgActive
+searchedBarBg: windowBgOver
+searchedBarBorder: shadowFg
+searchedBarFg: windowSubTextFgOver
+topBarBg: windowBg
+emojiPanBg: windowBg
+emojiPanCategories: #F7F7F7 // windowBg;
+emojiPanHeaderFg: windowSubTextFg
+emojiPanHeaderBg: #FFFFFFF2 // emojiPanBg;
+stickerPanDeleteBg: #000000CC
+stickerPanDeleteFg: windowFgActive
+stickerPreviewBg: #FFFFFFB0
+historyTextInFg: #000000 // incoming message text color (not self)
+historyTextOutFg: #FFFFFF // outgoing message text color (self)
+historyCaptionInFg: historyTextInFg
+historyCaptionOutFg: historyTextOutFg
+historyFileNameInFg: historyTextInFg
+historyFileNameOutFg: historyTextOutFg
+historyOutIconFg: #F0F0F2 // in chat check mark
+historyOutIconFgSelected: #FFFFFF
+historyIconFgInverted: windowFgActive
+historySendingOutIconFg: #FFFFFF
+historySendingInIconFg: #A0ADB5
+historySendingInvertedIconFg: #FFFFFFC8
+historySystemBg: #89A0B47F
+historySystemBgSelected: #BBC8D4A2
+historySystemFg: windowFgActive
+historyUnreadBarBg: #FCFBFA
+historyUnreadBarBorder: shadowFg
+historyUnreadBarFg: #538BB4
+historyForwardChooseBg: #0000004C
+historyForwardChooseFg: windowFgActive
+historyPeer1NameFg: #C03D33
+historyPeer1UserpicBg: #E17076
+historyPeer2NameFg: #4FAD2D
+historyPeer2UserpicBg: #3FC380
+historyPeer3NameFg: #D09306
+historyPeer3UserpicBg: #F9BF3B
+historyPeer4NameFg: #168ACD // acct color names
+historyPeer4UserpicBg: #65AADD
+historyPeer5NameFg: #8544D6
+historyPeer5UserpicBg: #8E44AD
+historyPeer6NameFg: #CD4073
+historyPeer6UserpicBg: #E08283
+historyPeer7NameFg: #2996AD
+historyPeer7UserpicBg: #6EC9CB
+historyPeer8NameFg: #CE671B
+historyPeer8UserpicBg: #FAA774
+historyPeerUserpicFg: windowFgActive
+historyScrollBarBg: #00000005
+historyScrollBarBgOver: #00000050 // <-- scroll stuff?
+historyScrollBg: #00000005
+historyScrollBgOver: #00000050
+msgInBg: #E6E8EE // incoming message bubble color
+msgInBgSelected: #C2DCF2
+msgOutBg: ThemeAkzent // sent (own) message bubble color 42b1f8
+msgOutBgSelected: #7AB7E6
+msgSelectOverlay: #358CD44C
+msgStickerOverlay: #358CD47F
+msgInServiceFg: #168ACD
+msgInServiceFgSelected: #168ACD
+msgOutServiceFg: #FFFFFF
+msgOutServiceFgSelected: #FFFFFF
+msgInShadow: #00000001 // incoming messages bubble shadow
+msgInShadowSelected: #548DBB29
+msgOutShadow: #FFFFFF01 // outgoing messages bubble shadow
+msgOutShadowSelected: #37A78D00
+msgInDateFg: #B1B1B1 // message received stamp text
+msgInDateFgSelected: #6A9CC5
+msgOutDateFg: #F0F0F2 // message sent stamp text
+msgOutDateFgSelected: #FFFFFF
+msgServiceFg: #FFFFFF // text of date bubble (between days)
+msgServiceBg: #00000030 // ?
+msgServiceBgSelected: #96B38BA2
+msgInReplyBarColor: activeLineFg
+msgInReplyBarSelColor: activeLineFg
+msgOutReplyBarColor: historyOutIconFg
+msgOutReplyBarSelColor: #FFFFFF
+msgImgReplyBarColor: msgServiceFg
+msgInMonoFg: #4E7391
+msgOutMonoFg: #469165
+msgDateImgFg: msgServiceFg
+msgDateImgBg: #00000054
+msgDateImgBgOver: #00000074
+msgDateImgBgSelected: #1C4A7187
+msgFileThumbLinkInFg: lightButtonFg
+msgFileThumbLinkInFgSelected: lightButtonFgOver
+msgFileThumbLinkOutFg: #FFFFFF
+msgFileThumbLinkOutFgSelected: #FFFFFF
+msgFileInBg: windowBgActive
+msgFileInBgOver: #4EADE3
+msgFileInBgSelected: #51A3D3
+msgFileOutBg: #FFFFFF // ?
+msgFileOutBgOver: #C1D7E6
+msgFileOutBgSelected: #FFFFFF
+msgFile1Bg: #72B1DF
+msgFile1BgDark: #5C9ECE
+msgFile1BgOver: #5294C4
+msgFile1BgSelected: #5099D0
+msgFile2Bg: #61B96E
+msgFile2BgDark: #4DA859
+msgFile2BgOver: #44A050
+msgFile2BgSelected: #469164
+msgFile3Bg: #E47272
+msgFile3BgDark: #CD5B5E
+msgFile3BgOver: #C35154
+msgFile3BgSelected: #9F6A82
+msgFile4Bg: #EFC274
+msgFile4BgDark: #E6A561
+msgFile4BgOver: #DC9C5A
+msgFile4BgSelected: #B19D84
+historyFileInIconFg: msgInBg
+historyFileInIconFgSelected: msgInBgSelected
+historyFileInRadialFg: historyFileInIconFg
+historyFileInRadialFgSelected: historyFileInIconFgSelected
+historyFileOutIconFg: msgOutBg
+historyFileOutIconFgSelected: msgOutBgSelected
+historyFileOutRadialFg: historyFileOutIconFg
+historyFileOutRadialFgSelected: historyFileOutIconFgSelected
+historyFileThumbIconFg: msgInBg
+historyFileThumbIconFgSelected: msgInBgSelected
+historyFileThumbRadialFg: historyFileThumbIconFg
+historyFileThumbRadialFgSelected: historyFileThumbIconFgSelected
+msgWaveformInActive: windowBgActive
+msgWaveformInActiveSelected: #51A3D3
+msgWaveformInInactive: #0000003D
+msgWaveformInInactiveSelected: #9CC1E1
+msgWaveformOutActive: #FFFFFF // waveform color of sent item
+msgWaveformOutActiveSelected: #FFFFFF
+msgWaveformOutInactive: #FFFFFFAB // waveform inactive color
+msgWaveformOutInactiveSelected: #FFFFFF5B
+msgBotKbOverBgAdd: #FFFFFF20
+msgBotKbIconFg: msgServiceFg
+msgBotKbRippleBg: #00000020
+mediaInFg: msgInDateFg
+mediaInFgSelected: msgInDateFgSelected
+mediaOutFg: msgOutDateFg
+mediaOutFgSelected: msgOutDateFgSelected
+youtubePlayIconBg: #E83131C8
+youtubePlayIconFg: windowFgActive
+videoPlayIconBg: #0000007F
+videoPlayIconFg: #FFFFFF
+toastBg: #000000B2
+toastFg: windowFgActive
+reportSpamBg: emojiPanHeaderBg
+reportSpamFg: windowFg
+historyToDownBg: windowBg
+historyToDownBgOver: windowBgOver
+historyToDownBgRipple: windowBgRipple
+historyToDownFg: menuIconFg
+historyToDownFgOver: menuIconFgOver
+historyToDownShadow: #00000040
+historyComposeAreaBg: #FFFFFF // message input box 
+historyComposeAreaFg: #000000 // blinking cursor color in compose area
+historyComposeAreaFgService: msgInDateFg
+historyComposeIconFg: #A6A6A6 // icons for attach, emoji, and mic
+historyComposeIconFgOver: menuIconFgOver
+historySendIconFg: windowBgActive
+historySendIconFgOver: windowBgActive
+historyPinnedBg: historyComposeAreaBg // ?
+historyReplyBg: historyComposeAreaBg // area around input box
+historyReplyIconFg: windowBgActive
+historyReplyCancelFg: cancelIconFg
+historyReplyCancelFgOver: cancelIconFgOver
+historyComposeButtonBg: historyComposeAreaBg
+historyComposeButtonBgOver: windowBgOver
+historyComposeButtonBgRipple: windowBgRipple
+overviewCheckBg: #00000040
+overviewCheckFg: windowBg
+overviewCheckFgActive: windowBg
+overviewPhotoSelectOverlay: #40ACE333
+profileStatusFgOver: #7C99B2
+profileVerifiedCheckBg: windowBgActive
+profileVerifiedCheckFg: windowFgActive
+profileAdminStartFg: windowBgActive
+notificationsBoxMonitorFg: windowFg
+notificationsBoxScreenBg: ThemeAkzent
+notificationSampleUserpicFg: windowBgActive
+notificationSampleCloseFg: #D7D7D7 // windowSubTextFg;
+notificationSampleTextFg: #D7D7D7 // windowSubTextFg;
+notificationSampleNameFg: #939393 // windowSubTextFg;
+mainMenuBg: windowBg
+mainMenuCoverBg: ThemeAkzent
+mainMenuCoverFg: windowFgActive
+mediaPlayerBg: #FFFFFF
+mediaPlayerActiveFg: windowBgActive
+mediaPlayerInactiveFg: #E2EBEF
+mediaPlayerDisabledFg: #9DD1EF
+mediaviewFileBg: windowBg
+mediaviewFileNameFg: windowFg
+mediaviewFileSizeFg: windowSubTextFg
+mediaviewFileRedCornerFg: #D55959
+mediaviewFileYellowCornerFg: #E8A659
+mediaviewFileGreenCornerFg: #49A957
+mediaviewFileBlueCornerFg: #599DCF
+mediaviewFileExtFg: activeButtonFg
+mediaviewMenuBg: #383838
+mediaviewMenuBgOver: #505050
+mediaviewMenuBgRipple: #676767
+mediaviewMenuFg: windowFgActive
+mediaviewBg: #222222EB
+mediaviewVideoBg: imageBg
+mediaviewControlBg: #0000003C
+mediaviewControlFg: windowFgActive
+mediaviewCaptionBg: #11111180
+mediaviewCaptionFg: mediaviewControlFg
+mediaviewTextLinkFg: #91D9FF
+mediaviewSaveMsgBg: toastBg
+mediaviewSaveMsgFg: toastFg
+mediaviewPlaybackActive: #C7C7C7
+mediaviewPlaybackInactive: #252525
+mediaviewPlaybackActiveOver: #FFFFFF
+mediaviewPlaybackInactiveOver: #474747
+mediaviewPlaybackProgressFg: #FFFFFFC7
+mediaviewPlaybackIconFg: mediaviewPlaybackActive
+mediaviewPlaybackIconFgOver: mediaviewPlaybackActiveOver
+mediaviewTransparentBg: #FFFFFF
+mediaviewTransparentFg: #CCCCCC
+notificationBg: windowBg
+msgOutMonoFgSelected: #FFFFFF
+wallpaper: t.me/bg/Z_roF_MWjVIBAAAA_5ljDOxCsAc // link to cloud wallpaper
