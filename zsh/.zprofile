@@ -7,8 +7,6 @@ alias pip=pip3
 
 # path: Ruby
 PATH="$PATH:/opt/homebrew/Cellar/ruby/3.2.2_1/bin"
-# path: Hydrangea Quick Mailer
-PATH="$PATH:/usr/local/Hydrangea-Quick-Mailer"
 # path: JetBrains
 PATH="$PATH:/Users/xiezeyu/Library/Application Support/JetBrains/Toolbox/scripts"
 # path: Python 2.7
