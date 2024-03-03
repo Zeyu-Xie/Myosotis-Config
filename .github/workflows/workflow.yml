@@ -2,11 +2,9 @@ name: Workflow for Myosotis Config
 on: [ push ]
 
 jobs:
-  
+
   # Job 1. List the pages and generate the artifact
   pages_directory_listing:
-
-    needs: compress_and_push
 
     runs-on: ubuntu-latest
     name: Pages Directory Listing
