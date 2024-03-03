@@ -3,40 +3,7 @@ on: [ push ]
 
 jobs:
   
-  # Job 1. Compress and Push
-  compress_and_push:
-
-    runs-on: ubuntu-latest
-    name: Compress and Push
-
-    steps:
-
-      # Step 1. Checkout Repository
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-        with:
-          ref: main
-
-      # Step 2. Execute Unbuntu Commands
-      - name: Delete old archive.zip and compress folder
-        run: |
-          rm web/Scholar-Lite/archive.zip
-          zip -r web/Scholar-Lite/archive.zip web/Scholar-Lite
-        shell: bash
-
-      # Step 3. Push to GitHub
-      - name: Commit and Push Changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          now=$(date +"%Y-%m-%d %H:%M:%S")
-          git commit -m "GitHub Action, ${now}"
-          git push
-
-  # Job 2. List the pages and generate the artifact
+  # Job 1. List the pages and generate the artifact
   pages_directory_listing:
 
     needs: compress_and_push
@@ -66,7 +33,7 @@ jobs:
         with:
           path: '.'
 
-  # Job 3. Deploy the artifact
+  # Job 2. Deploy the artifact
   deploy:
 
     needs: pages_directory_listing
